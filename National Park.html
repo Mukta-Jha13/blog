@@ -6,6 +6,91 @@
     <meta name="description" content="Travel blog sharing adventures, experiences, and travel tips.">
     <title>Pathless Pursuits</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Hero Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main Blog Content */
+.blog-content {
+    flex: 2;
+}
+
+.blog-content h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #2a2a2a;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+}
+
+.related-post {
+    margin-bottom: 20px;
+}
+
+.related-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.related-post p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: -1;
+    }
+}
+    </style>
 </head>
 <body>
     <!-- Navigation Bar (Unchanged) -->
@@ -44,7 +129,7 @@
             <p class="head">If there’s one moment that captures the essence of Torres del Paine, it’s watching the sun paint the granite spires—Las Torres—with fiery hues. The trek to the base is no easy feat, winding through lenga forests, rocky moraines, and steep ascents. But the reward? An awe-inspiring view of the three colossal towers reflected in a milky blue glacial lake, glowing with the first light of day. It’s a sight that leaves you breathless, not just from the climb, but from the sheer magnitude of nature’s artistry.</p>
             
             <h2>Trekking the W and O Circuits</h2>
-            <img src="trek.webp" alt="Trekking" class="blog-image" width=50%>
+            <img src="trek.webp" alt="Trekking" class="blog-image">
             <p class="head">Torres del Paine is a hiker’s paradise, offering legendary trails like the W and O Circuits. The W trek, a multi-day journey through the park’s most stunning highlights, leads adventurers past the French Valley, Grey Glacier, and the famous towers. For those seeking an even deeper immersion, the O Circuit encircles the entire park, revealing hidden valleys, pristine rivers, and views that few ever witness. Along the way, refugios and campsites provide cozy shelters where weary hikers share stories over steaming cups of yerba mate.</p>
             
             <h2>Wildlife Among the Peaks and Plains</h2>
